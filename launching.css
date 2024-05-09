@@ -1,0 +1,283 @@
+::selection {
+	text-shadow: none;
+	background: white;
+	color: black;
+}
+
+::-moz-selection {
+	text-shadow: none;
+	background: white;
+	color: black;
+}
+
+html,body{	
+	margin:0;
+	padding:0;
+}
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+html {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 200;
+	height:100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	line-height: 1.4em;
+	background-color: black;
+	color: white;
+	height:100%;	
+}
+
+body:after{
+	display: none;
+	content: url(splat/assets/img/dead-white.png);
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+h1,h2,h3{
+	left:0;
+}
+.wrapper {
+	position: absolute;
+	overflow: hidden;
+	display: table;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.scene, .layer {
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.scene{
+	position:relative;
+    overflow: hidden;
+}
+
+.layer {
+	position: absolute;
+	text-align: center;
+}
+
+.background {
+	background: url(splat/assets/img/background-01.jpg) no-repeat 50% 100%;
+	bottom: 0px;
+	background-size: cover;
+	position: absolute;
+	width: 110%;
+	left: -5%;
+	top: -5%;
+}
+	
+.title {
+	font-size: 3em;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top:-280px;
+}
+	
+h1 img {
+	width: 960px;
+	height: 201px;
+}
+
+.subtitle{
+	position: absolute;
+	width: 100%;
+	text-transform:uppercase;
+	font-size:3em;
+	line-height:0.7em;
+	top:50%;
+	margin-top:-10px;
+	font-weight:200;
+	font-style:italic;
+}
+
+.address{
+	position:absolute;
+	width:100%;
+	text-transform:uppercase;
+	font-size:1.8em;
+	line-height:1em;
+	top:50%;
+	margin-top:170px;
+	font-weight:400;
+	font-style:normal;
+}
+
+.launch{
+	position:absolute;
+	width:100%;
+	top:50%;
+	margin-top:90px;
+	text-transform:uppercase;
+	font-size:2.5em;
+	font-weight:900;
+	font-style:normal;
+}
+
+.tilt-icon{
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:10%;
+	width:300px;
+	text-align:left;
+}
+
+.tilt-icon img{
+	width:130px;
+	height:130px;
+	float:left;
+	margin-top:-30px;
+}
+
+.tilt{
+	font-size:1.3em;
+	text-transform:uppercase;
+	font-weight:400;
+	font-style:normal;
+	line-height:0.9em;
+}
+
+.fly {
+	background: url('splat/assets/img/kickass-fly-3.gif') 50% 50% no-repeat;
+	position: absolute;
+	height: 200px;
+	width: 170px;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.follower {
+	background: url('splat/assets/img/paddle.png') 50% -110px no-repeat;
+	position: absolute;
+	height: 110px;
+	width: 61px;
+	left: 0;
+	top: 0;
+	pointer-events:none;
+	z-index: 10;
+}
+	
+.top {
+	z-index: 100!important;
+}
+
+.bottom {
+	z-index: 10;
+}
+	
+.replay {
+	position: relative;
+	display: inline-block;
+	text-transform:uppercase;
+	font-size:5em;
+	line-height:1em;
+	font-weight:200;
+	font-style:italic;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 15px;
+	-webkit-transition: all, 0.3s ease;
+	-moz-transition: all, 0.3s ease;
+	-ms-transition: all, 0.3s ease;
+	-o-transition: all, 0.3s ease;
+	-webkit-transition: all, 0.3s ease;
+}
+
+.replay-wrap {
+	position:absolute;
+	width:100%;
+	left: 0;
+	top:75%;
+	text-align: center;
+}
+
+p.like {
+	font-size: 2em;
+	margin-top: 10px;
+}
+
+li.layer.replaylayer {
+	display: none;
+}
+
+html, body {
+	overflow: hidden;
+}
+
+.stain {
+	background: url('splat/assets/img/stain.png') 50% 50% no-repeat;
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	left: 0;
+	top: 0;
+}
+
+@media screen and (max-width:1024px){
+	.scene {
+		min-height: 460px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.title{
+		margin-top:-130px;
+	}
+
+	.title img{
+		width:600px;
+		height:auto;
+	}
+
+	.subtitle{
+		margin-top:40px;
+		font-size:4.5em;
+	}
+
+	.launch{
+		font-size:2.5em;
+	}
+
+	.address{
+		margin-top:130px;
+		font-size:2em;
+	}
+
+	.tilt-icon{
+		left:-20px;
+	}
+
+	.tilt-icon span{
+		display:none;
+	}
+}
